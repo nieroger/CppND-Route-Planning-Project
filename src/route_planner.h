@@ -21,6 +21,8 @@ class RoutePlanner {
     RouteModel::Node *NextNode();
 
   private:
+    bool Compare(const RouteModel::Node *first, const RouteModel::Node *latter);
+
     // Add private variables or methods declarations here.
     std::vector<RouteModel::Node*> open_list;
     RouteModel::Node *start_node;
